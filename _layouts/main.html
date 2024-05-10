@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <style>
+            #wrapper {
+                position: fixed;
+                font-family: Segoe WPC,Segoe UI,sans-serif;
+                color: rgb(204, 204, 204);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            #container {
+                display: flex;
+                flex:1;
+                height: 100%;
+            }
+
+            #icon-bar {
+                order: 1;
+                width: 48px;
+                background-color: rgb(24, 24, 24);
+                border-color: rgb(43, 43, 43);
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            #explorer-bar {
+                order: 2;
+                width: 240px;
+                background-color: rgb(24, 24, 24);
+                border-color: rgb(43, 43, 43);
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            #editor-window {
+                flex: 1;
+                order: 3;
+                background-color: rgb(31, 31, 31);
+                border-color: rgb(43, 43, 43);
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            .icon {
+                padding: 12px
+            }
+
+            .icon > img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .active-icon `{
+                border-left: 1px solid rgb(85, 144, 214);
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                <div id="icon-bar">
+                    <div class="icon active-icon">
+                        <img src="assets/images/person.svg"/>
+                    </div>
+
+                </div>
+                <div id="explorer-bar">
+
+                </div>
+                <div id="editor-window">
+                    <div id="editor-text">
+                        Hello world
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

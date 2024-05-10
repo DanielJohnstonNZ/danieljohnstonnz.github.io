@@ -5,8 +5,3 @@ description: >-
 url: "daniel.jhn.st"
 github_username:  DanielJohnstonNZ
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
